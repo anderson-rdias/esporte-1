@@ -1,0 +1,8 @@
+br\com\fiap\esporte\controller\AtletaController.class
+br\com\fiap\esporte\repository\AtletaRepository.class
+br\com\fiap\esporte\repository\ModalidadeRepository.class
+br\com\fiap\esporte\model\Atleta.class
+br\com\fiap\esporte\controller\HomeController.class
+br\com\fiap\esporte\model\Modalidade.class
+br\com\fiap\esporte\EsporteApplication.class
+br\com\fiap\esporte\controller\ModalidadeController.class
