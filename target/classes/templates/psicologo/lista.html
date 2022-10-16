@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Psicólogos</title>
+</head>
+<body>
+
+<div layout:fragment="content">
+    <h1>Lista de psicologos</h1>
+    <table class="table">
+        <tr>
+            <th>Nome</th>
+            <th>Data Nascimento</th>
+            <th>Clinica</th>
+            <th>CRM</th>
+            <th></th>
+        </tr>
+        <tr th:each="item:${psicologos}">
+            <td th:text="${item.nome}"></td>
+            <td th:text="${#temporals.format(item.dataNascimento,'dd/MM/yyyy')}"></td>
+            <td th:text="${item.clinica.nome}"></td>
+            <td th:text="${item.crm}"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

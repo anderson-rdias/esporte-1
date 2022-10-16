@@ -18,25 +18,25 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
-                    Modalidades
+                    Clinicas
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" th:href="@{/modalidade/cadastrar}">Cadastrar</a>
-                    <a class="dropdown-item" th:href="@{/modalidade/listar}">Listar</a>
+                    <a class="dropdown-item" th:href="@{/clinica/cadastrar}">Cadastrar</a>
+                    <a class="dropdown-item" th:href="@{/clinica/listar}">Listar</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
-                    Atletas
+                    Psicologos
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                    <a class="dropdown-item" th:href="@{/atleta/cadastrar}">Cadastrar</a>
-                    <a class="dropdown-item" th:href="@{/atleta/listar}">Listar</a>
+                    <a class="dropdown-item" th:href="@{/psicologo/cadastrar}">Cadastrar</a>
+                    <a class="dropdown-item" th:href="@{/psicologo/listar}">Listar</a>
                 </div>
             </li>
         </ul>
-        <form th:action="@{/atleta/buscar}" class="form-inline my-2 my-lg-0">
+        <form th:action="@{/psicologo/buscar}" class="form-inline my-2 my-lg-0">
             <input name="nomeBusca" class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
         </form>
@@ -45,7 +45,7 @@
 <div class="container" layout:fragment="content"></div>
 
 <footer class="text-center">
-    Todos os direitos reservados - 2020 &copy;
+    Todos os direitos reservados - 2022 &copy;
 </footer>
 
 <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
